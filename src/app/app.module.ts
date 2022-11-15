@@ -31,6 +31,10 @@ import { RouteComponent } from './components/routesFolder/route/route.component'
 import { AddUserComponent } from './components/usersFolder/add-user/add-user.component';
 import { UserProfileComponent } from './components/usersFolder/user-profile/user-profile.component';
 import { EditUserComponent } from './components/usersFolder/edit-user/edit-user.component';
+import { FaqComponent } from './components/faqFolder/faq/faq.component';
+import { FaqextendedComponent } from './components/faqFolder/faqextended/faqextended.component';
+import { FaqsComponent } from './components/faqFolder/faqs/faqs.component';
+import { AddFaqComponent } from './components/faqFolder/add-faq/add-faq.component';
 
 
 @NgModule({
@@ -55,6 +59,10 @@ import { EditUserComponent } from './components/usersFolder/edit-user/edit-user.
     AddUserComponent,
     UserProfileComponent,
     EditUserComponent,
+    FaqComponent,
+    FaqextendedComponent,
+    FaqsComponent,
+    AddFaqComponent,
 
 
     

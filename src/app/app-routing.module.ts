@@ -20,7 +20,9 @@ import { UsersComponent } from './components/usersFolder/users/users.component';
 import { BookingResolver } from './resolver/booking.resolver';
 import { RouteResolver } from './resolver/route.resolver';
 //import { BookingResolver } from './resolver/booking.resolver';
-
+import { FaqextendedComponent } from './components/faqFolder/faqextended/faqextended.component';
+import { FaqsComponent } from './components/faqFolder/faqs/faqs.component';
+import { AddFaqComponent } from './components/faqFolder/add-faq/add-faq.component';
 
 
 const routes: Routes = [
@@ -38,6 +40,9 @@ const routes: Routes = [
   {path: "login", component: LogInComponent},
   {path: "bookings/:id", component: BookingComponent, resolve: { bookingData: BookingResolver }},
   {path: "bookings/create",component: BookingFormComponent},
+  {path: "faq",component: FaqsComponent},
+  {path: "faq/:_id", component: FaqextendedComponent},
+  {path: "faq/create", component: AddFaqComponent},
   {path: "**", component: PageNotFoundComponent},
   
 

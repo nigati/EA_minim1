@@ -1,0 +1,30 @@
+<div class="faq">
+    <mat-card class="card">
+        <mat-card-header style="justify-content: center;">
+           <mat-card-title>FAQ INFORMATION</mat-card-title>
+        </mat-card-header>
+        <div class="divider"></div>
+        <mat-card-content>
+            <div class="container">
+                <h2>General Information</h2> 
+                <div class="content">
+                    <h4>FAQ ID: {{faq._id}}</h4>
+                    <h4>Title: {{faq.title}}</h4>
+                    <h4>Body: {{faq.title}}</h4>
+                </div>
+            </div>
+            <div class="container">
+                <div class="header"><mat-icon class="icon">perm_identity</mat-icon><h2 class="title">User Information</h2></div> 
+                <div class="content">
+                    <h4>User ID: {{faq.user._id}}</h4>
+                    <h4>User name: {{faq.user.name}}</h4>
+                    <h4>User mail: {{faq.user.email}}</h4>
+                </div>
+            </div>
+        </mat-card-content>
+        <mat-card-actions style="margin: 10px;">
+            <button mat-raised-button color="warn" (click)="delete()">delete</button>
+            <button mat-raised-button color="primary" (click)="edit()">edit</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
